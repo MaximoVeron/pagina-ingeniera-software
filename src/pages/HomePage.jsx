@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
 
 const HomePage = () => {
@@ -42,7 +42,7 @@ const HomePage = () => {
         {/* ¿Qué es la elicitación? */}
         <section className="bg-zinc-900/60 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-zinc-800 mb-10">
           <h2 className="text-2xl font-bold mb-3">
-             ¿Qué es la elicitación de requerimientos?
+            ¿Qué es la elicitación de requerimientos?
           </h2>
           <p className="text-zinc-300 leading-relaxed">
             Es el proceso mediante el cual se recopila información de usuarios,
@@ -65,7 +65,10 @@ const HomePage = () => {
 
         {/* Organización del sitio */}
         <section className="bg-zinc-900/60 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-zinc-800 mb-10">
-          <h2 className="text-2xl font-bold mb-3"> ¿Cómo está organizada esta página?</h2>
+          <h2 className="text-2xl font-bold mb-3">
+            {" "}
+            ¿Cómo está organizada esta página?
+          </h2>
           <p className="text-zinc-300 leading-relaxed">
             El sitio está dividido en secciones que explican los conceptos clave
             de la elicitación: definición, técnicas más usadas y ejemplos. Cada

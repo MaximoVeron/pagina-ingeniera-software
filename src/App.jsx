@@ -1,3 +1,12 @@
+import { NavBar } from "./components/NavBar";"./components/NavBar.jsx";
+import { AppRouter } from "./router/AppRouter";
+
+
+
+
 export const App = () => {
-  return <div>App</div>;
+  return <>
+  <AppRouter />
+  <NavBar />
+  </>;
 };
