@@ -1,6 +1,5 @@
-import React from "react";
 
-export const TecnicasDeElicitacion = () => {
+export const TecnicasDeElicitacionPage = () => {
   return (
     <section className="tecnicas-elicitacion">
       {/* Título principal de la sección */}
