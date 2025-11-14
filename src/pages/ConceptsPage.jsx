@@ -1,7 +1,7 @@
 export const ConceptsPage = () => {
   return (
     <>
-      <div>
+      <div> 
         <h2>¿Qué son los requerimientos?</h2>
         <p>
           Son descripciones de lo que el sistema debe hacer y cómo debe
