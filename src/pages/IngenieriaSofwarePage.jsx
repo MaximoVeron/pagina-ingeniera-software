@@ -20,7 +20,6 @@ export const IngenieriaSoftwarePage = () => {
   return (
     <main className="min-h-screen bg-zinc-950 text-white px-6 py-16">
       <div className="container mx-auto max-w-5xl">
-        
         {/* Título */}
         <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
           Introducción a la{" "}
@@ -29,33 +28,32 @@ export const IngenieriaSoftwarePage = () => {
 
         {/* Tarjetas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
           {/* Card Template */}
           {[
             {
               title: "📌 ¿Qué es?",
-              text: "La ingeniería de software es la disciplina que aplica métodos científicos, técnicos y sistemáticos para desarrollar, mantener y mejorar software de calidad."
+              text: "La ingeniería de software es la disciplina que aplica métodos científicos, técnicos y sistemáticos para desarrollar, mantener y mejorar software de calidad.",
             },
             {
               title: "🧩 Objetivo",
-              text: "Su propósito es crear software confiable, eficiente y mantenible, reduciendo errores y costos."
+              text: "Su propósito es crear software confiable, eficiente y mantenible, reduciendo errores y costos.",
             },
             {
               title: "⚙️ Fases",
-              text: "Incluye análisis, diseño, implementación, pruebas, despliegue y mantenimiento."
+              text: "Incluye análisis, diseño, implementación, pruebas, despliegue y mantenimiento.",
             },
             {
               title: "👥 Roles",
-              text: "Participan analistas, desarrolladores, testers, arquitectos, líderes de proyecto y stakeholders."
+              text: "Participan analistas, desarrolladores, testers, arquitectos, líderes de proyecto y stakeholders.",
             },
             {
               title: "🔍 Importancia",
-              text: "Permite planificar, documentar, gestionar riesgos y crear soluciones escalables."
+              text: "Permite planificar, documentar, gestionar riesgos y crear soluciones escalables.",
             },
             {
               title: "📐 Métodos",
-              text: "Incluye Cascada, Ágil, Scrum, XP y DevOps."
-            }
+              text: "Incluye Cascada, Ágil, Scrum, XP y DevOps.",
+            },
           ].map((card, index) => (
             <section
               key={index}
@@ -67,10 +65,8 @@ export const IngenieriaSoftwarePage = () => {
               <p className="text-zinc-300 leading-relaxed">{card.text}</p>
             </section>
           ))}
-
         </div>
       </div>
     </main>
   );
 };
-
