@@ -1,14 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import TecnicasDeElicitacion from "./pages/TecnicasDeElicitacionPage";
+import { NavBar } from "./components/NavBar";
+("./components/NavBar.jsx");
+import { AppRouter } from "./router/AppRouter";
 
-export default function App() {
+export const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/tecnicas" element={<TecnicasDeElicitacion />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <AppRouter />
+      <NavBar />
+    </>
   );
-}
+};
