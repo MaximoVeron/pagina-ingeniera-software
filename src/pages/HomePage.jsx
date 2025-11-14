@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
 
-const HomePage = () => {
+export const HomePage = () => {
   const [loading, setLoading] = useState(true);
 
   // Simulación de carga (como si fuese un fetch)
@@ -78,8 +78,22 @@ const HomePage = () => {
 
         {/* Enlaces directos */}
         <section className="text-center mb-10">
-          <h2 className="text-2xl font-bold mb-4"> Accesos Rápidos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-2xl font-bold mb-4">
+            ¿Por donde te gustaria empezar?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link
+              to="/ingenieria-software"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Ingeniería de Software
+            </Link>
+            <Link
+              to="/conceptos"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Conceptos
+            </Link>
             <Link
               to="/tecnicas"
               className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
@@ -93,10 +107,40 @@ const HomePage = () => {
               Ejemplos Prácticos
             </Link>
             <Link
-              to="/evaluacion"
+              to="/stakeholders"
               className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
             >
-              Evaluación
+              Stakeholders
+            </Link>
+            <Link
+              to="/procesos"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Procesos de Elicitación
+            </Link>
+            <Link
+              to="/validacion"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Validación y Preparación
+            </Link>
+            <Link
+              to="/documentacion"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Documentación de Requerimientos
+            </Link>
+            <Link
+              to="/herramientas"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Herramientas
+            </Link>
+            <Link
+              to="/glosario"
+              className="py-4 px-6 bg-red-600 hover:bg-red-700 rounded-lg font-medium transition shadow-lg shadow-red-600/20"
+            >
+              Glosario
             </Link>
           </div>
         </section>
@@ -121,5 +165,3 @@ const HomePage = () => {
     </main>
   );
 };
-
-export default HomePage;
